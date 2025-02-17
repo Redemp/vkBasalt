@@ -1138,7 +1138,7 @@ private:
 						.add(emit_constant(op.from, 0))
 						.result;
 				}
-				else
+				else if (op.to != op.from)
 				{
 					spv::Op spv_op = spv::OpNop;
 
